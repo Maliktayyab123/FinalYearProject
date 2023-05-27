@@ -1,0 +1,375 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="shortcut icon"
+      href="/static/images/fav.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="https://cdn.tailwindcss.com/css/v1.9.6/tailwind.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/static/images/fav.jpg" />
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/all.min.css" />
+    <link rel="stylesheet" href="/static/css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="/static/plugins/slider/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/static/plugins/slider/css/owl.theme.default.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+    <meta charset="utf-8">
+    <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/Missingperson.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+JFg6erFJhoPUis2psvLeva/KZQulp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Missing Person</title>
+    <style>
+      .fixed-size-image {
+          width: 200px; /* Set the desired width */
+          height: 240px; /* Set the desired height */
+          object-fit: cover; /* Maintain aspect ratio and fill the container */
+      }
+      form.discussion-form p {
+           width: 50%;
+           
+      }
+
+      
+        </style>
+   
+  </head>
+
+  <body style="background: none;">
+    <header class="continer-fluid">
+      <div class="header-top">
+        <div class="container">
+          <div class="row col-det">
+            <div class="col-lg-6 d-none d-lg-block">
+              <ul class="ulleft">
+                <li>
+                  <a href="mailto: chsorganization@gmail.com" style="text-decoration: none; color: #444;">
+                  <i class="far fa-envelope"></i>
+                  chsorganization@gmail.com
+                </a>
+                  <span>|</span>
+                
+                </li>
+                <li>
+                  <i class="fas fa-phone-volume"></i>
+                  +92 3026441842
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 folouws">
+              <ul class="ulright">
+                <li><small>Folow Us </small>:</li>
+                <li>
+                  <a href="https://www.facebook.com/chs.comsian" target="_blank"><i class="fab fa-facebook-square"></i>
+                  </a>
+                  </li>
+                  <li>
+                    <a href="https://wa.me/+923026441842" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                  </li>
+                <li>
+                  <a href="https://www.instagram.com/care_help_and_support/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 d-none d-md-block col-md-6 btn-bhed">
+              <a href="{% url 'login' %}"
+                ><button class="btn btn-sm btn-success">Login</button></a
+              >
+              <a href="{% url 'donation' %}">
+              <button class="btn btn-sm btn-default">Donate</button>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu-jk" class="header-bottom">
+        <div class="container">
+          <div class="row nav-row">
+            <div class="col-lg-3 col-md-12 logo">
+              <a href="{% url 'home' %}">
+                <img src="/static/images/logonew.png" alt="" />
+                <a data-toggle="collapse" data-target="#menu" href="#menu"
+                  ><i class="fas d-block d-lg-none small-menu fa-bars"></i
+                ></a>
+              </a>
+            </div>
+            <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
+              <ul class="navbad">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'home' %}">Home </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'adoption' %}">Child Adoption</a>
+                </li>
+
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'crisis_news' %}">News</a>
+              </li>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'mperson' %}">Missing Person</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+          </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+<!--  ************************* Page Title Starts Here ************************** -->
+
+<div class="page-nav no-margin row">
+    <div class="container">
+      <div class="row">
+        <h2>Missing Person Report</h2>
+        <ul>
+          <li>
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+          </li>
+          <li><i class="fas fa-angle-double-right"></i> Missing Person Report</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+    <div class="container">
+      <div class="container">
+        <!-- <h2>Missing Person System</h2> -->
+        <hr>
+    
+        <center><button id="showFormBtn" class="btn btn-success">Add Missing Person</button></center>
+    
+        <div id="missingPersonForm" style="display: none;">
+            <!-- <h2>Report Missing Person</h2> -->
+            <form id="missingPersonForm" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ missing_person_form.as_p }}
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+        </div>
+    
+        <hr>
+    
+        <!-- Rest of the content -->
+    </div>
+    
+    
+    
+        
+       
+        
+
+
+        
+        <Strong> <h2 class="text-center">Missing Persons</h2></Strong>
+        <div class="container">
+          <!-- <h1>Missing Person System</h1> -->
+          <hr>
+      
+          <div class="row text-center">
+              {% for person in missing_persons %}
+                  {% if person.is_approved %}
+                      <div class="col-md-4">
+                          <div class="card mt-3">
+                              <div class="card-body">
+                                  
+                                  <!-- Display other fields as necessary -->
+                                  {% if person.photo %}
+                                      <center><img class="fixed-size-image" src="{{ person.photo.url }}" alt="Missing Person Photo" width="200"></center>
+                                  {% endif %}
+                                  <hr>
+                                  <h5 class="card-title ">{{ person.full_name }}</h5>
+                                  
+                                  <p class="card-text">Age: {{ person.age }}</p>
+
+                                  <p class="card-text">Last Location: {{ person.last_location }}</p>
+
+                                  <p class="card-text">Height: {{ person.height }}</p>
+                                </div>
+                          </div>
+                      </div>
+                  {% endif %}
+              {% endfor %}
+          </div>
+      
+          <!-- Rest of the content -->
+      </div>
+      <div class="col-md-12">
+      <hr>
+
+      <h2 class="text-center ">Discussion Forum</h2>
+      <hr>
+      </div>
+      <div class="col-md-12">
+        {% for comment in comments %}
+    <div class="card mt-3">
+        <div class="card-body">
+            <div class="media">
+                <img  src="https://picsum.photos/seed/{{ comment.id }}/50" class="mr-3" alt="Dummy Image">
+                <div class="media-body">
+                    <h5 class="card-title">{{ comment.name }}</h5>
+                    <p class="card-text">{{ comment.comment }}</p>
+                    <p class="card-text"><small class="text-muted">{{ comment.timestamp }}</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}
+    
+
+        <hr>
+        
+        <h2>Let us know if you have information</h2>
+        <hr>
+        <form class="discussion-form" method="post">
+            {% csrf_token %}
+            {{ discussion_form.as_p }}
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        
+      </div>
+        
+        <hr>
+
+    </div>
+    
+  </div>
+  <br>
+  <br>
+  <br>
+
+  
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-12">
+        <h2 class="text-center">About Us</h2>
+        <p>
+          As an organization, our core values revolve around compassion, inclusivity, and integrity. We believe in fostering sustainable change by addressing the root causes of poverty and inequality,
+               while also providing immediate assistance to those in urgent need.
+        </p>
+      </div>
+      <!-- <div class="col-md-4 col-sm-12">
+        <h2>Useful Links</h2>
+        <ul class="list-unstyled link-list">
+          
+          <li>
+            <a ui-sref="about" href="#/about">About us</a
+            ><i class="fa fa-angle-right"></i>
+          </li>
+          <li>
+            <a ui-sref="contact" href="#/contact">Contact us</a
+            ><i class="fa fa-angle-right"></i>
+          </li>
+        </ul>
+      </div> -->
+      <div class="col-md-4 col-sm-12 map-img">
+        <h2>Contact Us</h2>
+        <address class="md-margin-bottom-40">
+          Comsats University <br />Wah Campus <br />
+          Email: <a href="mailto: chsorganization@gmail.com" class="">chsorganization@gmail.com</a
+          ><br />
+        </address>
+      </div>
+    </div>
+
+    <div class="nav-box row clearfix">
+      <div class="inner col-md-9 clearfix">
+        <ul class="footer-nav clearfix">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'contact' %}">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="donate-link col-md-3">
+        <a href="{% url 'donation' %}" class="btn btn-success"
+          ><span class="btn-title">Donate Now</span></a
+        >
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="copy">
+  <div class="container">
+    <a href="#"
+      >2023 &copy; All Rights Reserved | Designed and Developed by Students
+      of Comsats</a
+    >
+
+    <span>
+      <a><i class="fab fa-instagram"></i></a>
+      <a><i class="fab fa-twitter"></i></a>
+      <a><i class="fab fa-facebook-f"></i></a>
+    </span>
+  </div>
+</div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#showFormBtn").click(function() {
+                $("#missingPersonForm").toggle();
+            });
+        });
+    </script>
+<script src="/static/js/jquery-3.2.1.min.js"></script>
+<script src="/static/js/popper.min.js"></script>
+<script src="/static/js/bootstrap.min.js"></script>
+<script src="/static/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+<script src="/static/plugins/slider/js/owl.carousel.min.js"></script>
+<script src="/static/js/script.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+JFg6erFJhoPUis2psvLeva/KZQulp" crossorigin="anonymous"></script>
+</html>

@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url(bg.jpg); 
+    background-size: cover;
+}
+
+.missing-box {
+    width: 500px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 2%;
+    margin-bottom: -40px;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.missing-box-img {
+    /* border-radius: 50%; */
+    width: 200px;
+    height: 200px;
+}
+
+.missing-box .missing-h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    font-weight: 500;
+}
+
+.missing-box .missing-h5 {
+    font-size: 15px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.missing-box .missing-p {
+    text-align: justify;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.missing-box li {
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+}
+
+.missing-box li a {
+    color: white;
+    text-decoration: none;
+    font-size: 60px;
+    transition: all ease-in-out 250ms;
+}
+
+.missing-box li a:hover {
+    color: #b9b9b9;
+}
+
+
+/* Comment Section */
+.comment-container{
+    width: auto;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.comment-text{
+    font-size: 12px;
+}
+
+.fs-12{
+    font-size: 12px;
+}
+
+.shadow-none{
+    box-shadow: none;
+}
+
+.name{
+    color: #fff;
+}
+
+.cursor:hover{
+    color: blue;
+}
+
+.cursor{
+    cursor: pointer;
+}
+
+.textarea{
+    resize: none;
+    
+}
+
+.date{
+    font-size: 11px;
+}
+
+.comment-section{
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+/* Popup Form Start */
+.popup-box{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.popup-button{
+    font-size: 1em;
+    padding: 15px 35px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3 ease-out;
+    background: #403e3d;
+    border-radius: 50px;
+}
+
+.popup-button:hover{
+    background-color: lightblue;
+    text-decoration: none;
+}
+
+.popup-overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.popup-overlay:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-wrapper{
+    margin: 70px auto;
+    padding: 20px;
+    background: #e7e7e7;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+
+.popup-wrapper h2{
+    margin-top: 0;
+    color: #333;
+}
+
+.popup-wrapper .popup-close{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup-wrapper .popup-content{
+    max-height: 30%;
+    overflow: auto;
+}
+
+/* Form Design */
+.popup-container{
+    border-radius: 5px;
+    background: #e7e7e7;
+    padding: 20px 0;
+}
+
+form label{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+input[type=text], input[type=file], textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit]{
+    background-color: #413b3b;
+    color: #fff;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+/* Popup Form End's */

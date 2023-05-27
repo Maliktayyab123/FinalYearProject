@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Helping Hands</title>
+    <link
+      rel="shortcut icon"
+      href="/static/images/fav.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/static/images/fav.jpg" />
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/all.min.css" />
+    <link rel="stylesheet" href="/static/css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="/static/plugins/slider/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/static/plugins/slider/css/owl.theme.default.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+  </head>
+
+  <body>
+    <header class="continer-fluid">
+      <div class="header-top">
+        <div class="container">
+          <div class="row col-det">
+            <div class="col-lg-6 d-none d-lg-block">
+              <ul class="ulleft">
+                <li>
+                  <a href="mailto: chsorganization@gmail.com">
+                  <i class="far fa-envelope"></i>
+                  chsorganization@gmail.com
+                </a>
+                  <span>|</span>
+                
+                </li>
+                <li>
+                  <i class="fas fa-phone-volume"></i>
+                  +92 3026441842
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 folouws">
+              <ul class="ulright">
+                <li><small>Folow Us </small>:</li>
+                <li>
+                  <a href="https://www.facebook.com/chs.comsian" target="_blank"><i class="fab fa-facebook-square"></i>
+                  </a>
+                  </li>
+                  <li>
+                    <a href="https://wa.me/+923026441842" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                  </li>
+                <li>
+                  <a href="https://www.instagram.com/care_help_and_support/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 d-none d-md-block col-md-6 btn-bhed">
+              <a href="{% url 'login' %}"
+                ><button class="btn btn-sm btn-success">Login</button></a
+              >
+              <a href="{% url 'donation' %}">
+              <button class="btn btn-sm btn-default">Donate</button>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu-jk" class="header-bottom">
+        <div class="container">
+          <div class="row nav-row">
+            <div class="col-lg-3 col-md-12 logo">
+              <a href="{% url 'home' %}">
+                <img src="/static/images/logonew.png" alt="" />
+                <a data-toggle="collapse" data-target="#menu" href="#menu"
+                  ><i class="fas d-block d-lg-none small-menu fa-bars"></i
+                ></a>
+              </a>
+            </div>
+            <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
+              <ul class="navbad">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'home' %}">Home </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'adoption' %}">Child Adoption</a>
+                </li>
+
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'crisis_news' %}">News</a>
+              </li>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'mperson' %}">Missing Person</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+          </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ******************** Slider Starts Here ******************* -->
+    
+    <div class="slider">
+      <!-- Set up your HTML -->
+      
+        <div class="slider-img">
+          <div class="item">
+            <div class="slider-img">
+              <img src="/static/images/slider/banner.jpg" alt="" />
+            </div>
+            <div class="container">
+              <div class="row">
+                <div
+                  class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12"
+                >
+                  <div class="animated bounceInDown slider-captions">
+                    <h1 class="slider-title">
+                      Together
+                      Lets Help Each Other.
+                    </h1>
+                    <p class="slider-text hidden-xs">
+                      Our motto reflects the core mission of the welfare trust, which is to empower individuals 
+                      and communities, enabling them to lead fulfilling lives and contribute to the betterment of society.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="item">
+          <div class="slider-img">
+            <img src="/static/images/slider/banner3.jpg" alt="" />
+          </div>
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12"
+              >
+                <div class="slider-captions">
+                  <h1 class="slider-title">It's time for better help.</h1>
+                  <p class="slider-text hidden-xs">
+                    This motto emphasizes the importance of collaboration and unity in working towards a
+                     future where everyone can thrive and overcome challenges collectively.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="slider-img">
+            <img src="/static/images/slider/slider-1.jpg" alt="" />
+          </div>
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12"
+              >
+                <div class="slider-captions">
+                  <h1 class="slider-title">
+                    No one has ever become poor from giving
+                  </h1>
+                  <p class="slider-text hidden-xs">
+                    Our motto underscores the organization's commitment to compassionate and sustainable initiatives that create a lasting positive impact on
+                     the lives of those in need, driven by a genuine concern for their well-being.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <!--  ************************* About Us Starts Here ************************** -->
+
+    <div class="about-us container-fluid">
+      <div class="container">
+        <div class="row natur-row no-margin w-100">
+          <div class="text-part col-md-6">
+            <h2>About Our Charity</h2>
+            <p>
+              Helping Hand's workers and volunteers continue to work tirelessly for the relief of affected people across Pakistan and worldwide .Helping Hands being non-political, non-governmental and non-profit organization is committed to serving humanity especially vulnerable and orphans without any kind of discrimination to contribute in their well-being of health, education, financial sustainability, livelihood, shelter, availability of clean water, mosques, savage of disaster and other aspects of life. 
+            </p>
+            <p>
+              We also pay attention to the the welfare of our employees by means of resource mobilization and developing partnership with NGOs and other concerned public and private organisations. Our volunteers remain satisfied by providing their support and engaging in different useful programs and doing all such acts that are required to achieve our goal to help others with integrity.
+            </p>
+           
+          </div>
+          <div class="image-part col-md-6">
+            <div class="about-quick-box row">
+              <div class="col-md-6">
+                <div class="about-qcard">
+                  <i class="fas fa-user"></i>
+                  <a href="{% url 'signup' %}"><p>Become a Volunteer</p></a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-qcard">
+                  <i class="fas fa-search-dollar red"></i>
+                  <a href="{% url 'donation_pay' %}">
+                  <p>Quick Fundraise</p></a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-qcard">
+                  <i class="fas fa-donate yell"></i>
+                 <a href="{% url 'donation' %}">
+                  <p>Give Donations</p>
+                </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="about-qcard">
+                  <i class="fas fa-hands-helping blu"></i>
+                  <li>
+                    <a href="{% url 'adoption' %}"><p>Adopt a Child</p></a>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ################# Mission Vision Start Here #######################--->
+
+    <section class="container-fluid mission-vision">
+      <div class="container">
+        <div class="row mission">
+          <div class="col-md-6 mv-det">
+            <h1>Our Mission</h1>
+            <p>
+              To make the society well-versed with the basic human rights that many people do not know or cannot appeal for due to the lack of required resources.
+              To develop alliances with other networks, and lobbying with different government institutions and non-government organizations and work on the human rights issues.
+              To help people in desperate poverty by devising self-sustainable projects in Pakistan and help the underprivileged classes generate income they can make a living with.
+              To help rehabilitate the unfortunate families purely on humanitarian grounds without any affiliation or consideration for any political party, group, or activities.
+            </p>
+          </div>
+          <div class="col-md-6 mv-img">
+            <img src="/static/images/misin.jpg" alt="" />
+          </div>
+        </div>
+        <div class="row vision">
+          <div class="col-md-6 mv-img">
+            <img src="/static/images/vision.jpg" alt="" />
+          </div>
+          <div class="col-md-6 mv-det">
+            <h1>Our Vision</h1>
+            <p>
+              Helping Hands has been working for years against the injustice and inhumane activities germinating in Pakistan. To extend the scope of our endeavors, we will launching new projects to cater to the needs of people treated unjustly in any part of the world. We have our keen attention towards social injustice that goes unnoticed; we are constantly working to give our full measure and counter such issues.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- ################# Charity Number Starts Here#######################--->
+
+
+
+    <div class="doctor-message">
+      <div class="inner-lay">
+        <div class="container">
+          <div class="row session-title">
+            <h2>Our Achievements in Numbers</h2>
+            
+          </div>
+          <div class="row">
+            <div class="col-sm-3 numb">
+              <h3>{{ achievement.experience_years }}+</h3>
+              <span>YEARS OF EXPERIENCE</span>
+            </div>
+            <div class="col-sm-3 numb">
+              <h3>{{ achievement.happy_children }}</h3>
+              <span>HAPPY CHILDREN</span>
+            </div>
+            <div class="col-sm-3 numb">
+              <h3>{{ achievement.food_drives }}+</h3>
+              <span>FOOD DRIVES</span>
+            </div>
+            <div class="col-sm-3 numb">
+              <h3>{{ achievement.funds_raised }}+</h3>
+              <span>FUNDS RAISED</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <!--################### Our Team Starts Here #######################--->
+    <section class="our-team team-11">
+      <div class="container">
+        <div class="session-title row">
+          <h2>Meet our Team</h2>
+          
+        </div>
+        <div class="row team-row">
+          <div class="col-md-3 col-sm-6">
+            <div class="single-usr">
+              <img src="/static/images/team/1.jpg" alt="" />
+              <div class="det-o">
+                <h4>Numan Sabir</h4>
+                <i>President </i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="single-usr">
+              <img src="/static/images/team/2.jpg" alt="" />
+              <div class="det-o">
+                <h4>Rizwan Malik</h4>
+                <i>Vice President</i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="single-usr">
+              <img src="/static/images/team/3.jpg" alt="" />
+              <div class="det-o">
+                <h4>Husnain Ahmed</h4>
+                <i>Operational Head</i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="single-usr">
+              <img src="/static/images/team/4.jpg" alt="" />
+              <div class="det-o">
+                <h4>Abdullah Rafique</h4>
+                <i>Accounts Head</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-12">
+            <h2 class="text-center">About Us</h2>
+            <p>
+              As an organization, our core values revolve around compassion, inclusivity, and integrity. We believe in fostering sustainable change by addressing the root causes of poverty and inequality,
+               while also providing immediate assistance to those in urgent need.
+            </p>
+          </div>
+          <!-- <div class="col-md-4 col-sm-12">
+            <h2>Useful Links</h2>
+            <ul class="list-unstyled link-list">
+              <li>
+                <a ui-sref="about" href="#/services">Services</a
+                ><i class="fa fa-angle-right"></i>
+              </li>
+              <li>
+                <a ui-sref="about" href="#/about">About us</a
+                ><i class="fa fa-angle-right"></i>
+              </li>
+              <li>
+                <a ui-sref="contact" href="#/contact">Contact us</a
+                ><i class="fa fa-angle-right"></i>
+              </li>
+            </ul>
+          </div> -->
+          <div class="col-md-4 col-sm-12 map-img">
+            <h2>Contact Us</h2>
+            <address class="md-margin-bottom-40">
+              Comsats University <br />Wah Campus <br />
+              Email: <a href="mailto: chsorganization@gmail.com" class="">chsorganization@gmail.com</a
+              ><br />
+            </address>
+          </div>
+        </div>
+
+        <div class="nav-box row clearfix">
+          <div class="inner col-md-9 clearfix">
+            <ul class="footer-nav clearfix">
+              
+              <li><a href="{% url 'about' %}">About</a></li>
+              <li><a href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="donate-link col-md-3">
+            <a href="{% url 'donation' %}" class="btn btn-primary"
+              ><span class="btn-title">Donate Now</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copy">
+      <div class="container">
+        <a href="#"
+          >2023 &copy; All Rights Reserved | Designed and Developed by Students
+          of Comsats</a
+        >
+
+       
+      </div>
+    </div>
+  </body>
+
+  <script src="/static/js/jquery-3.2.1.min.js"></script>
+  <script src="/static/js/popper.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+  <script src="/static/plugins/slider/js/owl.carousel.min.js"></script>
+  <script src="/static/js/script.js"></script>
+</html>

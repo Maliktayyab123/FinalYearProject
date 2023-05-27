@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Natural Disaster & Crisis News</title>
+    <link
+      rel="shortcut icon"
+      href="/static/images/fav.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.tailwindcss.com/css/v1.9.6/tailwind.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="/static/images/fav.jpg" />
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/all.min.css" />
+    <link rel="stylesheet" href="/static/css/animate.css" />
+    <link
+      rel="stylesheet"
+      href="/static/plugins/slider/css/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/static/plugins/slider/css/owl.theme.default.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <style>
+      body {
+        background-color: #f5f5f5;
+      }
+      .card {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+
+    <header class="continer-fluid">
+      <div class="header-top">
+        <div class="container">
+          <div class="row col-det">
+            <div class="col-lg-6 d-none d-lg-block">
+              <ul class="ulleft">
+                <li>
+                  <a href="mailto: chsorganization@gmail.com" style="text-decoration: none; color: #444;">
+                  <i class="far fa-envelope"></i>
+                  chsorganization@gmail.com
+                </a>
+                  <span>|</span>
+                
+                </li>
+                <li>
+                  <i class="fas fa-phone-volume"></i>
+                  +92 3026441842
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 folouws">
+              <ul class="ulright">
+                <li><small>Folow Us </small>:</li>
+                <li>
+                  <a href="https://www.facebook.com/chs.comsian" target="_blank"><i class="fab fa-facebook-square"></i>
+                  </a>
+                  </li>
+                  <li>
+                    <a href="https://wa.me/+923026441842" target="_blank" rel="noopener noreferrer">
+                      <i class="fab fa-whatsapp"></i>
+                    </a>
+                  </li>
+                <li>
+                  <a href="https://www.instagram.com/care_help_and_support/" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 d-none d-md-block col-md-6 btn-bhed">
+              <a href="{% url 'login' %}"
+                ><button class="btn btn-sm btn-success">Login</button></a
+              >
+              <a href="{% url 'donation' %}">
+              <button class="btn btn-sm btn-default">Donate</button>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu-jk" class="header-bottom">
+        <div class="container">
+          <div class="row nav-row">
+            <div class="col-lg-3 col-md-12 logo">
+              <a href="{% url 'home' %}">
+                <img src="/static/images/logonew.png" alt="" />
+                <a data-toggle="collapse" data-target="#menu" href="#menu"
+                  ><i class="fas d-block d-lg-none small-menu fa-bars"></i
+                ></a>
+              </a>
+            </div>
+            <div id="menu" class="col-lg-9 col-md-12 d-none d-lg-block nav-col">
+              <ul class="navbad">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'home' %}">Home </a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'adoption' %}">Child Adoption</a>
+                </li>
+
+                
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'crisis_news' %}">News</a>
+              </li>
+            </li>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'mperson' %}">Missing Person</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'about' %}">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
+          </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="page-nav no-margin row">
+      <div class="container">
+        <div class="row">
+          <h2 class="col-12 col-md-3">Disaster News</h2>
+          <ul style="padding-left: 420px; text-decoration: none;" class="col-12 col-md-9">
+            <li class="d-flex align-items-center">
+              <a href="#" style="text-decoration: none;" class="d-flex align-items-center">
+                <i class="fas fa-home me-2" ></i> Home
+              </a>
+            </li>
+            <li class="d-flex align-items-center">
+              <i class="fas fa-angle-double-right me-2"></i>Disaster News
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="container py-5">
+      <h1 class="mb-5"><strong> Disaster and Crisis News</strong></h1>
+      <div class="row">
+        {% for article in news_list %}
+        <div class="col-md-6">
+          <div class="card">
+            <!-- <img src="{{ article.image_url }}" class="card-img-top" alt="..." /> -->
+            <div class="card-body">
+              <h5 class="card-title">{{ article.title }}</h5>
+              <p class="card-text">{{ article.summary }}</p>
+              <a href="{{ article.link }}" class="btn btn-success" target="_blank">Read more</a>
+              <a href="{% url 'donation' %}" class="btn btn-success" target="_blank">Donate Now</a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    
+    <!--  ************************* Footer Starts Here ************************** -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-12">
+            <h2 class="text-center">About Us</h2>
+            <p>
+              As an organization, our core values revolve around compassion, inclusivity, and integrity. We believe in fostering sustainable change by addressing the root causes of poverty and inequality,
+              while also providing immediate assistance to those in urgent need.
+            </p>
+          </div>
+          <!-- <div class="col-md-4 col-sm-12">
+            <h2>Useful Links</h2>
+            <ul class="list-unstyled link-list">
+              <li>
+                <a ui-sref="about" href="#/services">Services</a
+                ><i class="fa fa-angle-right"></i>
+              </li>
+              <li>
+                <a ui-sref="about" href="#/about">About us</a
+                ><i class="fa fa-angle-right"></i>
+              </li>
+              <li>
+                <a ui-sref="contact" href="#/contact">Contact us</a
+                ><i class="fa fa-angle-right"></i>
+              </li>
+            </ul>
+          </div> -->
+          <div class="col-md-4 col-sm-12 map-img">
+            <h2>Give Us Feedback</h2>
+            <address class="md-margin-bottom-40">
+              Comsats University <br />Wah Campus <br />
+              Email: <a href="mailto: chsorganization@gmail.com" class="">chsorganization@gmail.com</a
+              ><br />
+            </address>
+          </div>
+        </div>
+
+        <div class="nav-box row clearfix">
+          <div class="inner col-md-9 clearfix">
+            <ul class="footer-nav clearfix " >
+              <li ><a class="text-decoration-none" href="{% url 'home' %}">Home</a></li>
+              <li><a class="text-decoration-none" href="{% url 'about' %}">About</a></li>
+              <li><a class="text-decoration-none" href="{% url 'contact' %}">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="donate-link col-md-3">
+            <a href="{% url 'donation' %}" class="btn btn-success"
+              ><span class="btn-title">Donate Now</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copy">
+      <div class="container">
+        <a href="#"
+          >2023 &copy; All Rights Reserved | Designed and Developed by Students
+          of Comsats</a
+        >
+
+       
+      </div>
+    </div>
+  </body>
+
+  <script src="/static/js/jquery-3.2.1.min.js"></script>
+  <script src="/static/js/popper.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+  <script src="/static/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+  <script src="/static/plugins/slider/js/owl.carousel.min.js"></script>
+  <script src="/static/js/script.js"></script>
+    <!-- Bootstrap 5 JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.bundle.min.js"></script>
+  
+</html>
