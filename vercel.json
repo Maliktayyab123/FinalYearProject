@@ -1,15 +1,33 @@
 {
-    "builds": [{
-        "src": "HelpinHands/wsgi.py",
+
+"version": 2,
+"builds": [
+    {
+        "src": "HelpingHands/wsgi.py",
         "use": "@vercel/python",
-        "config":{ "maxLambaSize": "15mb", "runtime":"python3.2"}
-    }],
-    "routes":[
+        "config": {"maxLambdaSize": "15mb", "runtime":"python 3.9"}     
+    },
 
-        {
-            "src": "/(.*)",
-            "dest": "HelpingHands/wsgi.py"
+    {
+        "src": "build_files.sh",
+        "use": "@vercel/static-build",
+        "config": {
+            "distDir":"staticfiles_build"
+
         }
+    }
+    
+],
 
-    ]
+"routes":[
+{
+    "src": "/static/(.*)",
+    "dest": "/static/$1"
+},
+{
+    "src": "/(.*)",
+    "dest": "HelpingHands/wsgi.py"
+}
+]
+
 }
