@@ -2,7 +2,7 @@
     "builds": [{
         "src": "HelpinHands/wsgi.py",
         "use": "@vercel/python",
-        "config":{ "maxLambaSize": "15mb", "runtime":"python3.9"}
+        "config":{ "maxLambaSize": "15mb", "runtime":"python3.2"}
     }],
     "routes":[
 
