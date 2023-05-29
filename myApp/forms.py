@@ -22,7 +22,6 @@ class MissingPersonForm(forms.ModelForm):
             "reporter_phone_number",
             "date_of_disappearance",
             "details",
-            "cast",
             "photo",
         ]
 
@@ -41,7 +40,6 @@ class MissingPersonForm(forms.ModelForm):
         self.fields["reporter_phone_number"].required = True
         self.fields["date_of_disappearance"].required = True
         self.fields["details"].required = True
-        self.fields["cast"].required = True
         self.fields["photo"].required = True
 
     exclude = ["is_approved"]
