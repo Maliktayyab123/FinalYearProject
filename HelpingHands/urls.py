@@ -27,13 +27,12 @@ admin.site.index_title = "Welcome to Helping Hands Dashboard"
 
 urlpatterns = (
     [
-        path("admin/", admin.site.urls),
+        path("admin/", admin.site.urls, name="admin"),
         path("about/", views.about_us, name="about"),
         path("", views.index, name="home"),
         path("contact_form/", views.contact_us, name="contact"),
         path("donation/f/", views.donation_page, name="donation"),
         path("missing_person/", views.missing_persons, name="mperson"),
-        path("blogs/", views.blog_page, name="blog"),
         path("login/", views.LoginPage, name="login"),
         path("logout/", views.LogoutPage, name="logout"),
         path("join_us/", views.SignupPage, name="signup"),
@@ -43,8 +42,6 @@ urlpatterns = (
             views.submit_consent,
             name="submit_consent",
         ),
-        path("services/", views.services_page, name="services"),
-        path("gallery/", views.gallery_page, name="gallery"),
         path("adoption/", views.adoption_page, name="adoption"),
         path("save_adopt_form/", views.save_adoptionForm, name="save_adopt_form"),
         path("crisis-news/", views.crisis_news, name="crisis_news"),

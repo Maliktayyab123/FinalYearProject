@@ -102,6 +102,10 @@ def crisis_news(request):
 from .models import Notification, UserNotification
 
 
+from django.views.decorators.csrf import csrf_protect
+
+
+@csrf_protect
 @login_required
 def Dashboard(request):
     notifications = Notification.objects.filter(users=request.user)

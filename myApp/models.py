@@ -82,7 +82,7 @@ class MissingPerson(models.Model):
     gender = models.CharField(max_length=10)
     date_of_birth = models.DateField()
     last_location = models.CharField(max_length=100)
-    height = models.PositiveIntegerField(validators=[MinValueValidator(0)])
+    height = models.FloatField(validators=[MinValueValidator(0)])
     weight = models.FloatField(validators=[MinValueValidator(0)])
     hair_color = models.CharField(max_length=50)
     distinguishing_marks = models.TextField()
