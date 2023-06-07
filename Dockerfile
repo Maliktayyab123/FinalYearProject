@@ -8,7 +8,7 @@ RUN pip install --upgrade pip
 
 
 
-RUN pip3 install dns bs4 django-adminlte-3 pillow
+RUN pip install dnspython beautifulsoup4 stripe django-adminlte-3 pillow
 
 COPY . .
 
