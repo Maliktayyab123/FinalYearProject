@@ -14,6 +14,6 @@ COPY . .
 
 WORKDIR /build/
 
-# EXPOSE 5000
+EXPOSE 8000
 
 CMD python manage.py runserver
